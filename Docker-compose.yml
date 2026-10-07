@@ -1,0 +1,11 @@
+services:
+  spatial-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: spatial_catalog_matcher
+    volumes:
+      # Mount local data directory so outputs persist outside the container
+      - ./data:/app/data
+    environment:
+      - PYTHONUNBUFFERED=1

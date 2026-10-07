@@ -1,0 +1,5 @@
+astropy
+astroquery
+numpy
+pandas
+pyarrow
